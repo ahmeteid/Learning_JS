@@ -133,6 +133,46 @@ function myDiscount(price, avragePrice) {
     }
 }
 
-var discountFuncton = myDiscount(prompt("Please enter your price: "),200);
+// var discountFuncton = myDiscount(prompt("Please enter your price: "),200);
 
-document.getElementById("test").innerHTML= discountFuncton;
+// document.getElementById("test").innerHTML= discountFuncton;
+
+
+
+// Functions + Self invoke
+
+// (function convertMoney(amount){
+//     "user strict";
+//     var result = amount * 3.75;
+//     return alert(result);
+// }
+// )(200);
+
+// (function convertMoney(){
+
+//     "user strict";
+
+//     var amount = document.getElementById("price").innerHTML;
+//     alert(amount * 3.75);
+
+// }());  // Best practice to self invoke 
+
+
+function convertUsd(){
+    "user strict";
+    var amount = document.getElementById("dollar").value,
+    result = amount * 3.75,
+    message = document.getElementById("message");
+
+    if (amount === ""){
+        message.innerHTML = "This Field can't Be Empty";
+    }else if(isNaN(amount)){
+        message.innerHTML = "This Field Accept Numbers Only";
+    } else if(amount === "0"){
+        message.innerHTML = "This Value must Not Be 0";
+    } else if (amount < 0){
+        message.innerHTML = "The Value Must Be Negative Number"
+    } else {
+        message.innerHTML= amount + "Dollar Is Worth " + result + " Riyal";
+    }
+}
