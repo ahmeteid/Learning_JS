@@ -124,14 +124,14 @@ var myFunction = myAgeInDays();
 
 // Functions With Parameters
 
-function myDiscount(price, avragePrice) {
-    "user srict"; 
-    if (price >= avragePrice){
-        return price - 100;
-    } else {
-        return "You are under the minimum limit of price, and the average price is: " + avragePrice
-    }
-}
+// function myDiscount(price, avragePrice) {
+//     "user srict"; 
+//     if (price >= avragePrice){
+//         return price - 100;
+//     } else {
+//         return "You are under the minimum limit of price, and the average price is: " + avragePrice
+//     }
+// }
 
 // var discountFuncton = myDiscount(prompt("Please enter your price: "),200);
 
@@ -158,21 +158,44 @@ function myDiscount(price, avragePrice) {
 // }());  // Best practice to self invoke 
 
 
-function convertUsd(){
-    "user strict";
-    var amount = document.getElementById("dollar").value,
-    result = amount * 3.75,
-    message = document.getElementById("message");
+// function convertUsd(){
+//     "user strict";
+//     var amount = document.getElementById("dollar").value,
+//     result = amount * 3.75,
+//     message = document.getElementById("message");
 
-    if (amount === ""){
-        message.innerHTML = "This Field can't Be Empty";
-    }else if(isNaN(amount)){
-        message.innerHTML = "This Field Accept Numbers Only";
-    } else if(amount === "0"){
-        message.innerHTML = "This Value must Not Be 0";
-    } else if (amount < 0){
-        message.innerHTML = "The Value Must Be Negative Number"
-    } else {
-        message.innerHTML= amount + "Dollar Is Worth " + result + " Riyal";
-    }
+//     if (amount === ""){
+//         message.innerHTML = "This Field can't Be Empty";
+//     }else if(isNaN(amount)){
+//         message.innerHTML = "This Field Accept Numbers Only";
+//     } else if(amount === "0"){
+//         message.innerHTML = "This Value must Not Be 0";
+//     } else if (amount < 0){
+//         message.innerHTML = "The Value Must Be Negative Number"
+//     } else {
+//         message.innerHTML= amount + "Dollar Is Worth " + result + " Riyal";
+//     }
+// }
+
+
+// switch case break and default
+
+var gba = prompt("Enter your gba: ");
+
+switch (gba) {
+    case ("4"):
+        document.write("Exlante");
+        break;
+    case ("3"):
+        document.write("Very Good");
+        break;
+    case ("2"):
+        document.write("Good");
+        break;
+    case ("1.5"):
+        document.write("Bad");
+        break;
+    default:
+        document.write("Out of Range");
+        break;
 }
