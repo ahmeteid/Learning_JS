@@ -125,7 +125,7 @@ var myFunction = myAgeInDays();
 // Functions With Parameters
 
 // function myDiscount(price, avragePrice) {
-//     "user srict"; 
+//     "user strict"; 
 //     if (price >= avragePrice){
 //         return price - 100;
 //     } else {
@@ -180,22 +180,44 @@ var myFunction = myAgeInDays();
 
 // switch case break and default
 
-var gba = prompt("Enter your gba: ");
+// var gba = prompt("Enter your gba: ");
 
-switch (gba) {
-    case ("4"):
-        document.write("Exlante");
-        break;
-    case ("3"):
-        document.write("Very Good");
-        break;
-    case ("2"):
-        document.write("Good");
-        break;
-    case ("1.5"):
-        document.write("Bad");
-        break;
-    default:
-        document.write("Out of Range");
-        break;
+// switch (gba) {
+//     case ("4"):
+//         document.write("Exlante");
+//         break;
+//     case ("3"):
+//         document.write("Very Good");
+//         break;
+//     case ("2"):
+//         document.write("Good");
+//         break;
+//     case ("1.5"):
+//         document.write("Bad");
+//         break;
+//     default:
+//         document.write("Out of Range");
+//         break;
+// }
+
+
+
+//Scopping
+
+
+var number = 1;
+function sumFunc (){
+    "user strict";
+    var calc = number + 2;
+    
+    function secondNumber (){
+        "user strict";
+        var calc = number + 5;
+        console.log(calc);
+    }
+    console.log(calc);
+    // return sumOfNumbers;
 }
+
+sumFunc();
+console.log(number)
