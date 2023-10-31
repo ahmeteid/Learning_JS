@@ -205,19 +205,126 @@ var myFunction = myAgeInDays();
 //Scopping
 
 
-var number = 1;
-function sumFunc (){
-    "user strict";
-    var calc = number + 2;
+// var number = 1;
+// function sumFunc (){
+//     "user strict";
+//     var calc = number + 2;
     
-    function secondNumber (){
-        "user strict";
-        var calc = number + 5;
-        console.log(calc);
-    }
-    console.log(calc);
+//     function secondNumber (){
+//         "user strict";
+//         var calc = number + 5;
+//         console.log(calc);
+//     }
+//     console.log(calc);
     // return sumOfNumbers;
-}
+// }
 
-sumFunc();
-console.log(number)
+// sumFunc();
+// console.log(number)
+
+
+
+// Array Adding
+
+// var friends = [
+//     "ahmed",
+//     "omer",
+//     "mohamed"
+// ];
+
+// friends[friends.length] = "khaled";
+// console.log(friends);
+
+// friends.push("ibrahim");
+// console.log(friends);
+// console.log(friends.length);
+
+// friends.unshift("mahmoud");
+// console.log(friends);
+// console.log(friends.length);
+
+// friends.splice(3, 0, "saad");
+// console.log(friends);
+// console.log(friends.length);
+
+
+// friends.splice(3, 2);
+// console.log(friends);
+// console.log(friends.length);
+
+
+
+
+// Array Removing
+
+// var friends = [
+//     "ahmed",
+//     "omer",
+//     "mohamed",
+//     "ayman",
+//     "khaled",
+//     "ali",
+//     "yasser",
+//     "saad"
+// ];
+
+// friends.pop();
+// console.log(friends);
+// var lastItem = friends.pop();
+// console.log(lastItem);
+
+// friends.shift()
+// console.log(friends);
+// var firestItem = friends.shift();
+// console.log(firestItem);
+// console.log(friends.length);
+
+
+// Array Sort & Reverse
+
+// var friends = [
+//     "ahmed",
+//     "omer",
+//     "mohamed",
+//     "ayman",
+//     "khaled",
+//     "ali",
+//     "yasser",
+//     "saad"
+// ];
+
+// friends.sort();
+// console.log(friends);
+// friends.reverse();
+// console.log(friends);
+
+
+
+// Combine & Slice
+
+var friends = [
+    "ahmed",
+    "omer",
+    "mohamed",
+    "ayman",
+    "khaled",
+    "ali",
+    "yasser",
+    "saad"
+];
+console.log(friends);
+
+// var slicedArray = friends.slice(2, 5);
+// // var slicedArray = friends.slice(-5, -2);
+// // var slicedArray = friends.slice(1);
+// console.log(slicedArray);
+
+
+var otherFriends = [
+    "saleh",
+    "osama",
+    "hesham"
+];
+
+var allFriends = friends.concat(otherFriends);
+console.log(allFriends);
