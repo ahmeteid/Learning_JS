@@ -302,17 +302,17 @@ var myFunction = myAgeInDays();
 
 // Combine & Slice
 
-var friends = [
-    "ahmed",
-    "omer",
-    "mohamed",
-    "ayman",
-    "khaled",
-    "ali",
-    "yasser",
-    "saad"
-];
-console.log(friends);
+// var friends = [
+//     "ahmed",
+//     "omer",
+//     "mohamed",
+//     "ayman",
+//     "khaled",
+//     "ali",
+//     "yasser",
+//     "saad"
+// ];
+// console.log(friends);
 
 // var slicedArray = friends.slice(2, 5);
 // // var slicedArray = friends.slice(-5, -2);
@@ -320,11 +320,53 @@ console.log(friends);
 // console.log(slicedArray);
 
 
-var otherFriends = [
-    "saleh",
-    "osama",
-    "hesham"
+// var otherFriends = [
+//     "saleh",
+//     "osama",
+//     "hesham"
+// ];
+
+// var allFriends = friends.concat(otherFriends);
+// console.log(allFriends);
+
+
+
+// Array Search
+
+var friends = [
+    "hesham",
+    "ahmed",
+    "omer",
+    "mohamed",
+    "ayman",
+    "khaled",
+    "hesham",
+    "ali",
+    "yasser",
+    "saad"
 ];
 
-var allFriends = friends.concat(otherFriends);
-console.log(allFriends);
+console.log(friends);
+var specialFriends = friends.indexOf("ahmed");
+console.log(specialFriends);
+console.log(friends[specialFriends]);
+
+document.getElementById("all").innerHTML =
+    "My Friends Are : " + friends;
+document.getElementById("special").innerHTML =
+    "My Special Friend Is : " + friends[specialFriends].toUpperCase();
+
+
+    
+    var specialFriends = friends.indexOf("hesham");
+    console.log(specialFriends);
+    console.log(friends[specialFriends]);
+    document.getElementById("special1").innerHTML =
+        "My Special Friend Is : " + friends[specialFriends].toLowerCase();
+
+
+        var specialFriends = friends.lastIndexOf("hesham", 9);
+    console.log(specialFriends);
+    console.log(friends[specialFriends]);
+    document.getElementById("special2").innerHTML =
+        "My Special Friend Is : " + friends[specialFriends].toUpperCase();
