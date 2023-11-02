@@ -333,40 +333,167 @@ var myFunction = myAgeInDays();
 
 // Array Search
 
-var friends = [
-    "hesham",
-    "ahmed",
-    "omer",
-    "mohamed",
-    "ayman",
-    "khaled",
-    "hesham",
-    "ali",
-    "yasser",
-    "saad"
-];
+// var friends = [
+//     "hesham",
+//     "ahmed",
+//     "omer",
+//     "mohamed",
+//     "ayman",
+//     "khaled",
+//     "hesham",
+//     "ali",
+//     "yasser",
+//     "saad"
+// ];
 
-console.log(friends);
-var specialFriends = friends.indexOf("ahmed");
-console.log(specialFriends);
-console.log(friends[specialFriends]);
+// console.log(friends);
+// var specialFriends = friends.indexOf("ahmed");
+// console.log(specialFriends);
+// console.log(friends[specialFriends]);
 
-document.getElementById("all").innerHTML =
-    "My Friends Are : " + friends;
-document.getElementById("special").innerHTML =
-    "My Special Friend Is : " + friends[specialFriends].toUpperCase();
+// document.getElementById("all").innerHTML =
+//     "My Friends Are : " + friends;
+// document.getElementById("special").innerHTML =
+//     "My Special Friend Is : " + friends[specialFriends].toUpperCase();
 
 
     
-    var specialFriends = friends.indexOf("hesham");
-    console.log(specialFriends);
-    console.log(friends[specialFriends]);
-    document.getElementById("special1").innerHTML =
-        "My Special Friend Is : " + friends[specialFriends].toLowerCase();
+//     var specialFriends = friends.indexOf("hesham");
+//     console.log(specialFriends);
+//     console.log(friends[specialFriends]);
+//     document.getElementById("special1").innerHTML =
+//         "My Special Friend Is : " + friends[specialFriends].toLowerCase();
 
 
-        var specialFriends = friends.lastIndexOf("hesham", 9);
-    console.log(specialFriends);
-    console.log(friends[specialFriends]);
-    document.getElementById("special2").innerHTML =
-        "My Special Friend Is : " + friends[specialFriends].toUpperCase();
+//         var specialFriends = friends.lastIndexOf("hesham", 9);
+//     console.log(specialFriends);
+//     console.log(friends[specialFriends]);
+//     document.getElementById("special2").innerHTML =
+//         "My Special Friend Is : " + friends[specialFriends].toUpperCase();
+
+
+
+
+// Array Methods - Practice
+
+// 1- Check .isArray()
+// var myMsg = "Hello Worled";
+// var myMsg = [
+//     "m1",
+//     "m2",
+//     "m3",
+//     "m4"
+// ];
+
+// if (Array.isArray(myMsg)) {
+//     console.log("Yes This is array");
+// } else {
+//     console.log("No This is not array");
+// }
+
+// 2- Get & Set length
+// var myMsg = [
+//     "m1",
+//     "m2",
+//     "m3",
+//     "m4"
+// ];
+// console.log(myMsg);
+// console.log(myMsg.length);
+// myMsg.length = 2;
+// console.log(myMsg);
+
+// // 3- Convert .toString
+// var myMsg = [
+//     "m1",
+//     "m2",
+//     "m3",
+//     "m4"
+// ];
+// console.log(myMsg);
+// console.log(myMsg.join(" & "));
+// // console.log(myMsg.toString());
+// // console.log(myMsg.toLocaleString());
+
+// var myDate = new Date();
+// console.log(myDate);
+// console.log(myDate.toLocaleDateString());
+
+
+// 4- Array Adding Elements
+// var myMsg = [
+//     "m1",
+//     "m2",
+//     "m3",
+//     "m4"
+// ];
+// console.log(myMsg);
+// // myMsg[4] = "m5";
+// // myMsg[myMsg.length] = "m5";
+// // myMsg.push("m5");
+// // myMsg.unshift("m0");
+// myMsg.splice(0, 0, "ahmed");
+// console.log(myMsg);
+
+
+//5- Array Remove Items
+// var myMsg = [
+//     "m1",
+//     "m2",
+//     "m3",
+//     "m4"
+// ];
+// console.log(myMsg);
+// myMsg.splice(1, 2);
+// myMsg.pop();
+// myMsg.shift();
+// var firestItem = myMsg.shift(); 
+// console.log(firestItem);
+// var lastItem = myMsg.pop();
+// console.log(lastItem);
+
+
+
+//6- Array sort & Reverse
+// var myMsg = [
+//     "m3",
+//     "m4",
+//     "m1",
+//     "m2"
+// ];
+// console.log(myMsg);
+// myMsg.sort();
+// console.log(myMsg);
+// myMsg.reverse();
+// console.log(myMsg);
+
+
+
+// 7- Array slice & combine
+// var myMsg = [
+//     "m3",
+//     "m4",
+//     "m1",
+//     "m2"
+// ];
+// myMsg.sort();
+// console.log(myMsg);
+// // console.log(myMsg.slice(2, 3));
+// var ms2 = [
+//     "Ahmed",
+//     "omar"
+// ];
+// console.log(myMsg.concat(ms2));
+
+
+
+// 8- Array Searching
+var myMsg = [
+    "m3",
+    "m4",
+    "m1",
+    "m2"
+];
+myMsg.sort();
+console.log(myMsg.indexOf("m2", 0));
+console.log(myMsg.lastIndexOf("m4", 3));
