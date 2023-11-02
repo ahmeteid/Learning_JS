@@ -488,12 +488,23 @@ var myFunction = myAgeInDays();
 
 
 // 8- Array Searching
-var myMsg = [
-    "m3",
-    "m4",
-    "m1",
-    "m2"
-];
-myMsg.sort();
-console.log(myMsg.indexOf("m2", 0));
-console.log(myMsg.lastIndexOf("m4", 3));
+// var myMsg = [
+//     "m3",
+//     "m4",
+//     "m1",
+//     "m2"
+// ];
+// myMsg.sort();
+// console.log(myMsg.indexOf("m2", 0));
+// console.log(myMsg.lastIndexOf("m4", 3));
+
+
+
+// String Methods - Convert To String
+
+var str = "Welcome to programmer worled";
+console.log(str + " Data Type is: " + typeof(str));
+
+var number = 1000;
+var newNumber = number.toString();
+console.log(typeof(newNumber));
