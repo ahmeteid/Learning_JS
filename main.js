@@ -502,9 +502,26 @@ var myFunction = myAgeInDays();
 
 // String Methods - Convert To String
 
-var str = "Welcome to programmer worled";
-console.log(str + " Data Type is: " + typeof(str));
+// var str = "Welcome to programmer worled";
+// console.log(str + " Data Type is: " + typeof(str));
 
-var number = 1000;
-var newNumber = number.toString();
-console.log(typeof(newNumber));
+// var number = 1000;
+// var newNumber = number.toString();
+// console.log(typeof(newNumber));
+
+
+
+
+// Strings Methods - Locate A String
+
+var str = "I'm in love with JavaScript and in love with PHP",
+    myWorld = str.indexOf("and", 29);
+console.log(myWorld);
+myWorld = str.lastIndexOf("and", 29);
+console.log(myWorld);
+myWorld = str.search("in");
+console.log(myWorld);
+myWorld = str.search(/JAVA/i);
+newString = myWorld.toString();
+console.log(myWorld);
+console.log(typeof(newString));
