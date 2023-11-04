@@ -514,14 +514,46 @@ var myFunction = myAgeInDays();
 
 // Strings Methods - Locate A String
 
-var str = "I'm in love with JavaScript and in love with PHP",
-    myWorld = str.indexOf("and", 29);
-console.log(myWorld);
-myWorld = str.lastIndexOf("and", 29);
-console.log(myWorld);
-myWorld = str.search("in");
-console.log(myWorld);
-myWorld = str.search(/JAVA/i);
-newString = myWorld.toString();
-console.log(myWorld);
-console.log(typeof(newString));
+// var str = "I'm in love with JavaScript and in love with PHP",
+//     myWorld = str.indexOf("and", 29);
+// console.log(myWorld);
+// myWorld = str.lastIndexOf("and", 29);
+// console.log(myWorld);
+// myWorld = str.search("in");
+// console.log(myWorld);
+// myWorld = str.search(/JAVA/i);
+// newString = myWorld.toString();
+// console.log(myWorld);
+// console.log(typeof(newString));
+
+
+
+// Strings Methods - Split A String
+
+/*
+Split : .split(separator , limit);
+Slice : .slice(start [Reguired], End [Optional]);
+Substr : .substr(start [Reguired], length [Optional]);
+SubString : .substring(start[Reguired], End [Optional])
+*/
+
+// 1- Split
+var myMainString = "I Love JavaScript and JSON",
+    mySplited = myMainString.split(" ", 3);
+console.log(mySplited);
+
+// 2- Slice
+var myMainString = "I Love JavaScript and JSON",
+    mySliced = myMainString.slice(6, 11);
+console.log(mySliced);
+
+// 4- Substr
+var myMainString = "I Love JavaScript and JSON",
+    mySubstr = myMainString.substr(15, 7);
+console.log(mySubstr);
+
+// 5- Substring
+var myMainString = "I Love JavaScript and JSON",
+    // mySubString = myMainString.substring(6, 20);
+    mySubString = myMainString.substring(20, 6);
+console.log(mySubString);
