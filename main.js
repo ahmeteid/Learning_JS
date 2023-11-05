@@ -567,14 +567,29 @@ CharCodeAt : .charCodeAt(index);
 Replace : .replace(Value, New Value);
 */
 
-var str = "I Love JavaScript Too much JavaScript is very fun",
-    myCharAt = str.charAt(5),
-    myCharCodeAt = str.charCodeAt(10),
-    // myReplace = str.replace("JavaScript", "PHP");
-    // myReplace = str.replace(/JavaScript/g, "PHP");
-    // myReplace = str.replace(/jAvasCript/i, "PHP");
-    myReplace = str.replace(/jAvasCript/gi, "PHP");
-console.log(str);
-console.log(myCharAt);
-console.log(myCharCodeAt);
-console.log(myReplace);
+// var str = "I Love JavaScript Too much JavaScript is very fun",
+//     myCharAt = str.charAt(5),
+//     myCharCodeAt = str.charCodeAt(10),
+//     // myReplace = str.replace("JavaScript", "PHP");
+//     // myReplace = str.replace(/JavaScript/g, "PHP");
+//     // myReplace = str.replace(/jAvasCript/i, "PHP");
+//     myReplace = str.replace(/jAvasCript/gi, "PHP");
+// console.log(str);
+// console.log(myCharAt);
+// console.log(myCharCodeAt);
+// console.log(myReplace);
+
+
+// Strings Methods - Concatenating
+
+/*
+string.fromCharCode(num1, num2, num3, num4, .....);
+concat(string, string, string, string, .....);
+*/
+
+var str = String.fromCharCode(70, 82, 79, 77, 32, 65, 72, 77, 69, 68),
+    str2 = "My",
+    allStr = str.concat(" Welcom To " + str2 + " Worled");
+console.log(allStr);
+// console.log("Welcome To " + str + " Worled");
+// console.log("==> " + str2);
