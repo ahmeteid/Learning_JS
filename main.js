@@ -587,9 +587,18 @@ string.fromCharCode(num1, num2, num3, num4, .....);
 concat(string, string, string, string, .....);
 */
 
-var str = String.fromCharCode(70, 82, 79, 77, 32, 65, 72, 77, 69, 68),
-    str2 = "My",
-    allStr = str.concat(" Welcom To " + str2 + " Worled");
-console.log(allStr);
+// var str = String.fromCharCode(70, 82, 79, 77, 32, 65, 72, 77, 69, 68),
+//     str2 = "My",
+//     allStr = str.concat(" Welcom To " + str2 + " Worled");
+// console.log(allStr);
 // console.log("Welcome To " + str + " Worled");
-// console.log("==> " + str2);
+
+
+// Stringd Methods - Convert Letters
+
+var myString  = "I Love JS",
+    myLowerCase = myString.toLowerCase();
+    myUpperCase = myString.toUpperCase();
+console.log(myString);
+console.log(myLowerCase);
+console.log(myUpperCase);
