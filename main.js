@@ -538,22 +538,43 @@ SubString : .substring(start[Reguired], End [Optional])
 */
 
 // 1- Split
-var myMainString = "I Love JavaScript and JSON",
-    mySplited = myMainString.split(" ", 3);
-console.log(mySplited);
+// var myMainString = "I Love JavaScript and JSON",
+//     mySplited = myMainString.split(" ", 3);
+// console.log(mySplited);
 
-// 2- Slice
-var myMainString = "I Love JavaScript and JSON",
-    mySliced = myMainString.slice(6, 11);
-console.log(mySliced);
+// // 2- Slice
+// var myMainString = "I Love JavaScript and JSON",
+//     mySliced = myMainString.slice(6, 11);
+// console.log(mySliced);
 
-// 4- Substr
-var myMainString = "I Love JavaScript and JSON",
-    mySubstr = myMainString.substr(15, 7);
-console.log(mySubstr);
+// // 4- Substr
+// var myMainString = "I Love JavaScript and JSON",
+//     mySubstr = myMainString.substr(15, 7);
+// console.log(mySubstr);
 
-// 5- Substring
-var myMainString = "I Love JavaScript and JSON",
-    // mySubString = myMainString.substring(6, 20);
-    mySubString = myMainString.substring(20, 6);
-console.log(mySubString);
+// // 5- Substring
+// var myMainString = "I Love JavaScript and JSON",
+//     // mySubString = myMainString.substring(6, 20);
+//     mySubString = myMainString.substring(20, 6);
+// console.log(mySubString);
+
+
+
+// Strings Methods - Find & Replace
+/*
+CharAt : .charAt(index);
+CharCodeAt : .charCodeAt(index);
+Replace : .replace(Value, New Value);
+*/
+
+var str = "I Love JavaScript Too much JavaScript is very fun",
+    myCharAt = str.charAt(5),
+    myCharCodeAt = str.charCodeAt(10),
+    // myReplace = str.replace("JavaScript", "PHP");
+    // myReplace = str.replace(/JavaScript/g, "PHP");
+    // myReplace = str.replace(/jAvasCript/i, "PHP");
+    myReplace = str.replace(/jAvasCript/gi, "PHP");
+console.log(str);
+console.log(myCharAt);
+console.log(myCharCodeAt);
+console.log(myReplace);
