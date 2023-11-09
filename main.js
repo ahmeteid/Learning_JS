@@ -619,7 +619,51 @@ concat(string, string, string, string, .....);
 
 // Strings Methods - Chain Methods
 
-var myNumber = 355,
-    myString = myNumber.toString().replace(5, 9).split("");
-console.log(myNumber);
-console.log(myString);
+// var myNumber = 355,
+//     myString = myNumber.toString().replace(5, 9).split("");
+// console.log(myNumber);
+// console.log(myString);
+
+
+// Strings Methods - Practice
+
+var str = "I love \"Programming\" languages";  // 1- skip
+
+console.log(str.length); // 2- length
+console.log(str);
+var num = 120;
+console.log(num);
+console.log(typeof(num));
+console.log(typeof(num.toString())); // convert toString
+
+var mySearch = "I Love JavaScript",
+    mySearching = mySearch.indexOf("Love", 5); // Searching
+console.log(mySearching);
+var newSearch = mySearch.lastIndexOf("Love", 5);
+console.log(newSearch);
+var cahrSearch = mySearch.search("J");
+console.log(cahrSearch);
+
+var myString = "I Love JavAScript",
+    // mySplite = myString.split(" ", 2); //splite
+    // mySlice = myString.slice(1, 8); // slice
+    // mySubStr = myString.substr(1, 10); // substr
+    // mySubStr = myString.substr(-10); // substr
+    // mySubString = myString.substring(1, 8); // substring
+    // mySubString = myString.substring(8, 1); // substring
+    // myCharAt = myString.charAt(5); // charAt
+    // myCharCodeAt = myString.charCodeAt(5); // charCodeAt
+    // myReplace = myString.replace("a", "x"); // replace
+    // myReplace = myString.replace(/a/gi, "x"); // replace
+    myConcat = myString.concat(" too much      ").trim(); // concat
+    // mySlice = myString.slice(-5); // slice
+// console.log(mySplite); //splite
+// console.log(mySlice); // slice
+// console.log(mySubStr); // substr
+// console.log(mySubString); // substring
+// console.log(myCharAt); // charAt
+// console.log(myCharCodeAt); // charCodeAt
+// console.log(myReplace);
+console.log(myConcat); // concat
+console.log(myConcat.toUpperCase().split(" ")); // toUpperCase
+console.log(myConcat.toLowerCase()); // toLowerCase
