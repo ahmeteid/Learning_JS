@@ -596,9 +596,21 @@ concat(string, string, string, string, .....);
 
 // Stringd Methods - Convert Letters
 
-var myString  = "I Love JS",
-    myLowerCase = myString.toLowerCase();
-    myUpperCase = myString.toUpperCase();
-console.log(myString);
-console.log(myLowerCase);
-console.log(myUpperCase);
+// var myString  = "I Love JS",
+//     myLowerCase = myString.toLowerCase();
+//     myUpperCase = myString.toUpperCase();
+// console.log(myString);
+// console.log(myLowerCase);
+// console.log(myUpperCase);
+
+
+// Strings Methods - Trim & Linke 
+
+var str = "     Hello my name is Ahmed      ";
+console.log(str);
+var trimStr = str.trim();
+console.log(trimStr);
+
+
+var str = "Ahmed";
+console.log(str.link("https://ahmeteid.github.io/HTML-CSS-Template-three/"));
