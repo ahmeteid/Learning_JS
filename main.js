@@ -606,11 +606,20 @@ concat(string, string, string, string, .....);
 
 // Strings Methods - Trim & Linke 
 
-var str = "     Hello my name is Ahmed      ";
-console.log(str);
-var trimStr = str.trim();
-console.log(trimStr);
+// var str = "     Hello my name is Ahmed      ";
+// console.log(str);
+// var trimStr = str.trim();
+// console.log(trimStr);
 
 
-var str = "Ahmed";
-console.log(str.link("https://ahmeteid.github.io/HTML-CSS-Template-three/"));
+// var str = "Ahmed";
+// console.log(str.link("https://ahmeteid.github.io/HTML-CSS-Template-three/"));
+
+
+
+// Strings Methods - Chain Methods
+
+var myNumber = 355,
+    myString = myNumber.toString().replace(5, 9).split("");
+console.log(myNumber);
+console.log(myString);
