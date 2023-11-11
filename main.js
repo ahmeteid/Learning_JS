@@ -672,7 +672,7 @@ concat(string, string, string, string, .....);
 
 
 // Loops => For
-// - For Loop Syntax
+// 1- For Loop Syntax
 /*
 for (Initialization; Condition; Final Expression) {
     Statement;
@@ -683,26 +683,52 @@ for (Initialization; Condition; Final Expression) {
 -Final Expression: Executed Everytime thr code run
 */
 
-var i;
+// var i;
 // for (i = 1; i <= 10; i++) {
 //     console.log(i);
 // }
 
-var friends = [
-    "Ahmed",
-    "Omer",
-    "Mohamed",
-    "Khaled",
-    "Hesham",
-    "Mahmoud"
-];
-console.log(friends.length);
+// var friends = [
+//     "Ahmed",
+//     "Omer",
+//     "Mohamed",
+//     "Khaled",
+//     "Hesham",
+//     "Mahmoud"
+// ];
+// console.log(friends.length);
 
-for (i = 1; i < friends.length; i++) {
-    console.log(friends[i]);
+// for (i = 1; i < friends.length; i++) {
+//     console.log(friends[i]);
+// }
+
+// console.log(friends[1]);
+// console.log(friends[0]);
+// console.log(friends[4]);
+// console.log(friends[5]);
+
+
+// 1- For In Loop Syntax
+
+/*
+for (variable In object) {
+    if (object.hasOwnProperty(variable))
+    {
+        statement;
+    }
+}
+*/
+
+var myCar = {
+    colour: "Black",
+    type: "BMW",
+    model: "2024",
+    price: "50.000"
 }
 
-console.log(friends[1]);
-console.log(friends[0]);
-console.log(friends[4]);
-console.log(friends[5]);
+var prop;
+for (prop in myCar) {
+    if (myCar.hasOwnProperty(prop)) {
+        console.log(prop + ": " + myCar[prop]);
+    }
+}
