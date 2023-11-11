@@ -708,7 +708,7 @@ for (Initialization; Condition; Final Expression) {
 // console.log(friends[5]);
 
 
-// 1- For In Loop Syntax
+// 2- For In Loop Syntax
 
 /*
 for (variable In object) {
@@ -733,15 +733,62 @@ for (variable In object) {
 //     }
 // }
 
-function generateYears (Strat, End) {
-    "use strict";
-    var years;
+
+// Fot Loop With Function
+// function generateYears (Strat, End) {
+//     "use strict";
+//     var years;
+//     document.write("<select>");
+//     for (years = Strat; years <= End; years = years + 10) {
+//         document.write("<option value=\"" + years + "\">" + years + "</option>");
+//     }
+//     document.write("</select>");
+// }
+
+// generateYears(1500, 2030);
+// generateYears(1900, 2020);
+
+
+// While Loop Syntax
+// var i = 0;
+// while (i <= 10) {
+//     console.log(i);
+//     i++;
+// }
+
+
+// function generateYears (Start, End) {
+//         "use strict";
+//         var years = Start;
+//         document.write("<select>");
+//         while (years <= End) {
+//             document.write("<option value=\"" + years + "\">" + years + "</option>");
+//             years++;
+//         }
+//         document.write("</select>");
+//     }
+    
+//     generateYears(1500, 2030);
+//     generateYears(1900, 2020);
+
+// Do While Loop
+// var i = 0;
+// do {
+//     console.log(i);
+//     i++;
+// } while (i <= 10);
+
+// Do While Loop With Function
+
+function generateYears (Start, End) {
+    var years = Start;
     document.write("<select>");
-    for (years = Strat; years <= End; years = years + 10) {
+    do {
         document.write("<option value=\"" + years + "\">" + years + "</option>");
-    }
+        years++;
+    } while (years <= End);
     document.write("</select>");
 }
 
-generateYears(1500, 2030);
 generateYears(1900, 2020);
+generateYears(2000, 2020);
