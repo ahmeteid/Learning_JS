@@ -1,4 +1,5 @@
 /*global console, alert, prompt */
+/*jslint plusplus: true*/
 
 // Addition
 var x = 100,
@@ -627,24 +628,24 @@ concat(string, string, string, string, .....);
 
 // Strings Methods - Practice
 
-var str = "I love \"Programming\" languages";  // 1- skip
+// var str = "I love \"Programming\" languages";  // 1- skip
 
-console.log(str.length); // 2- length
-console.log(str);
-var num = 120;
-console.log(num);
-console.log(typeof(num));
-console.log(typeof(num.toString())); // convert toString
+// console.log(str.length); // 2- length
+// console.log(str);
+// var num = 120;
+// console.log(num);
+// console.log(typeof(num));
+// console.log(typeof(num.toString())); // convert toString
 
-var mySearch = "I Love JavaScript",
-    mySearching = mySearch.indexOf("Love", 5); // Searching
-console.log(mySearching);
-var newSearch = mySearch.lastIndexOf("Love", 5);
-console.log(newSearch);
-var cahrSearch = mySearch.search("J");
-console.log(cahrSearch);
+// var mySearch = "I Love JavaScript",
+//     mySearching = mySearch.indexOf("Love", 5); // Searching
+// console.log(mySearching);
+// var newSearch = mySearch.lastIndexOf("Love", 5);
+// console.log(newSearch);
+// var cahrSearch = mySearch.search("J");
+// console.log(cahrSearch);
 
-var myString = "I Love JavAScript",
+// var myString = "I Love JavAScript",
     // mySplite = myString.split(" ", 2); //splite
     // mySlice = myString.slice(1, 8); // slice
     // mySubStr = myString.substr(1, 10); // substr
@@ -655,7 +656,7 @@ var myString = "I Love JavAScript",
     // myCharCodeAt = myString.charCodeAt(5); // charCodeAt
     // myReplace = myString.replace("a", "x"); // replace
     // myReplace = myString.replace(/a/gi, "x"); // replace
-    myConcat = myString.concat(" too much      ").trim(); // concat
+    // myConcat = myString.concat(" too much      ").trim(); // concat
     // mySlice = myString.slice(-5); // slice
 // console.log(mySplite); //splite
 // console.log(mySlice); // slice
@@ -664,6 +665,44 @@ var myString = "I Love JavAScript",
 // console.log(myCharAt); // charAt
 // console.log(myCharCodeAt); // charCodeAt
 // console.log(myReplace);
-console.log(myConcat); // concat
-console.log(myConcat.toUpperCase().split(" ")); // toUpperCase
-console.log(myConcat.toLowerCase()); // toLowerCase
+// console.log(myConcat); // concat
+// console.log(myConcat.toUpperCase().split(" ")); // toUpperCase
+// console.log(myConcat.toLowerCase()); // toLowerCase
+
+
+
+// Loops => For
+// - For Loop Syntax
+/*
+for (Initialization; Condition; Final Expression) {
+    Statement;
+}
+
+-Initialization : Excuted Before the loop once
+-Codition: Define the condition to Run the loop
+-Final Expression: Executed Everytime thr code run
+*/
+
+var i;
+// for (i = 1; i <= 10; i++) {
+//     console.log(i);
+// }
+
+var friends = [
+    "Ahmed",
+    "Omer",
+    "Mohamed",
+    "Khaled",
+    "Hesham",
+    "Mahmoud"
+];
+console.log(friends.length);
+
+for (i = 1; i < friends.length; i++) {
+    console.log(friends[i]);
+}
+
+console.log(friends[1]);
+console.log(friends[0]);
+console.log(friends[4]);
+console.log(friends[5]);
