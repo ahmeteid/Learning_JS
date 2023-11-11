@@ -780,15 +780,41 @@ for (variable In object) {
 
 // Do While Loop With Function
 
-function generateYears (Start, End) {
-    var years = Start;
-    document.write("<select>");
-    do {
-        document.write("<option value=\"" + years + "\">" + years + "</option>");
-        years++;
-    } while (years <= End);
-    document.write("</select>");
-}
+// function generateYears (Start, End) {
+//     var years = Start;
+//     document.write("<select>");
+//     do {
+//         document.write("<option value=\"" + years + "\">" + years + "</option>");
+//         years++;
+//     } while (years <= End);
+//     document.write("</select>");
+// }
 
-generateYears(1900, 2020);
-generateYears(2000, 2020);
+// generateYears(1900, 2020);
+// generateYears(2000, 2020);
+
+
+
+// Loops - Control - Break, Continue, Label
+var i, x;
+MainLoop:
+for (i = 1; i < 5; i++) {
+    ChildLoop:
+    for (x = 15; x < 20; x++) {
+        if (x === 17) {
+            // break MainLoop;
+            // continue MainLoop;
+
+            break ChildLoop;
+            // continue ChildLoop;
+        }
+    console.log(i + "=> " + x);
+    }
+}
+// for (i = 1; i <= 5; i++) {
+//     if (i === 3) {
+//         // break;
+//         continue;
+//     }
+//     console.log(i);
+// }
