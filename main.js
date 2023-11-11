@@ -719,16 +719,29 @@ for (variable In object) {
 }
 */
 
-var myCar = {
-    colour: "Black",
-    type: "BMW",
-    model: "2024",
-    price: "50.000"
+// var myCar = {
+//     colour: "Black",
+//     type: "BMW",
+//     model: "2024",
+//     price: "50.000"
+// }
+
+// var prop;
+// for (prop in myCar) {
+//     if (myCar.hasOwnProperty(prop)) {
+//         console.log(prop + ": " + myCar[prop]);
+//     }
+// }
+
+function generateYears (Strat, End) {
+    "use strict";
+    var years;
+    document.write("<select>");
+    for (years = Strat; years <= End; years = years + 10) {
+        document.write("<option value=\"" + years + "\">" + years + "</option>");
+    }
+    document.write("</select>");
 }
 
-var prop;
-for (prop in myCar) {
-    if (myCar.hasOwnProperty(prop)) {
-        console.log(prop + ": " + myCar[prop]);
-    }
-}
+generateYears(1500, 2030);
+generateYears(1900, 2020);
