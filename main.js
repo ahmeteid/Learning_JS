@@ -796,21 +796,21 @@ for (variable In object) {
 
 
 // Loops - Control - Break, Continue, Label
-var i, x;
-MainLoop:
-for (i = 1; i < 5; i++) {
-    ChildLoop:
-    for (x = 15; x < 20; x++) {
-        if (x === 17) {
-            // break MainLoop;
-            // continue MainLoop;
+// var i, x;
+// MainLoop:
+// for (i = 1; i < 5; i++) {
+//     ChildLoop:
+//     for (x = 15; x < 20; x++) {
+//         if (x === 17) {
+//             // break MainLoop;
+//             // continue MainLoop;
 
-            break ChildLoop;
-            // continue ChildLoop;
-        }
-    console.log(i + "=> " + x);
-    }
-}
+//             break ChildLoop;
+//             // continue ChildLoop;
+//         }
+//     console.log(i + "=> " + x);
+//     }
+// }
 // for (i = 1; i <= 5; i++) {
 //     if (i === 3) {
 //         // break;
@@ -818,3 +818,15 @@ for (i = 1; i < 5; i++) {
 //     }
 //     console.log(i);
 // }
+
+
+
+// Math
+
+// 1- Math - ceil
+var x = Math.ceil(4.1);
+console.log(x);
+
+// 2- Math - floor
+var y = Math.floor(4.9);
+console.log(y);
