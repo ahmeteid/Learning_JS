@@ -767,7 +767,7 @@ for (variable In object) {
 //         }
 //         document.write("</select>");
 //     }
-    
+
 //     generateYears(1500, 2030);
 //     generateYears(1900, 2020);
 
@@ -824,9 +824,18 @@ for (variable In object) {
 // Math
 
 // 1- Math - ceil
-var x = Math.ceil(4.1);
-console.log(x);
+// var x = Math.ceil(5.2);
+// var x = Math.ceil(5 - 2.3);
+// console.log(x);
 
-// 2- Math - floor
-var y = Math.floor(4.9);
-console.log(y);
+// // 2- Math - floor
+// var y = Math.floor(4.9);
+// console.log(y);
+
+// 3- Math - Random
+var x = Math.random(),
+    myLimit = 10;
+console.log(Math.floor(Math.random() * myLimit))
+// console.log(Math.floor(x * myLimit) + 1);
+// var x = Math.random();
+// console.log(Math.floor(x * 10) + 1);
