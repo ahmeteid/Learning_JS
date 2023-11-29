@@ -839,3 +839,18 @@ console.log(Math.floor(Math.random() * myLimit))
 // console.log(Math.floor(x * myLimit) + 1);
 // var x = Math.random();
 // console.log(Math.floor(x * 10) + 1);
+
+
+// Regular Expression
+
+//Syntax
+// /pattern/attribute
+// search | Relace | split | Match | Test
+// Attributes List
+// 1- [i] => Case insensitive
+// 2- [g] => Global Search
+// 3- [m] => Multi Line Search
+
+var str = "I Love Elzero web school",
+    result = str.replace(/L/gi, "@");
+console.log(result);
