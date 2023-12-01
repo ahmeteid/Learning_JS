@@ -851,6 +851,30 @@ console.log(Math.floor(Math.random() * myLimit))
 // 2- [g] => Global Search
 // 3- [m] => Multi Line Search
 
-var str = "I Love Elzero web school",
-    result = str.replace(/L/gi, "@");
-console.log(result);
+// Brackets
+// 1- [...] Character
+// 2- [^...] Not this Character
+// 3- [a-z] Range small letters
+// 4- [A-Z] Range capital letters
+// 5- [0-9] Range Numbers
+// 6- [^a-g] Not this Range
+// 7- [A-g] = Range [A-Z] Range [a-g]
+// 8- [0-9a-z] Double Range
+
+var str = "I 0 Love 1 Elzero 2 web 3 School hiz",
+    // result = str.replace(/[e]/gi, "$");
+    // result = str.replace(/[^e]/gi, "$");
+    // result = str.replace(/[a-z]/g, "$");
+    // result = str.replace(/[^a-z]/g, "$");
+    // result = str.replace(/[A-Z]/g, "$");
+    // result = str.replace(/[^A-Z]/g, "$");
+    // result = str.replace(/[0-9]/gi, "$");
+    // result = str.replace(/[^0-9]/gi, "$");
+    // result = str.replace(/[A-g]/g, "$");
+    // result = str.replace(/[^A-g]/g, "$");
+    result = str.replace(/[0-9a-z]/g, "$");
+document.write(result);
+
+// var str = "I Love Elzero web school",
+//     result = str.replace(/L/gi, "@");
+// console.log(result);
