@@ -861,7 +861,21 @@ console.log(Math.floor(Math.random() * myLimit))
 // 7- [A-g] = Range [A-Z] Range [a-g]
 // 8- [0-9a-z] Double Range
 
-var str = "I 0 Love 1 Elzero 2 web 3 School hiz",
+// Quantifiers
+// Letter + => word contain one letter
+// Letter {Number} => word contain Number of letter
+// Letter {Number, Number} => word contain Number of Number
+// Letter {Number, } => word contain at least Number
+
+var str = "I love Elzeeero eeeee Weeb School",
+    // result = str.replace(/e+/gi, "@");
+    // result = str.replace(/e{2}/gi, "@");
+    // result = str.replace(/e{2,3}/gi, "@");
+    result = str.replace(/e{2,}/gi, "@");
+document.write(result);
+
+
+// var str = "I 0 Love 1 Elzero 2 web 3 School hiz",
     // result = str.replace(/[e]/gi, "$");
     // result = str.replace(/[^e]/gi, "$");
     // result = str.replace(/[a-z]/g, "$");
@@ -872,8 +886,8 @@ var str = "I 0 Love 1 Elzero 2 web 3 School hiz",
     // result = str.replace(/[^0-9]/gi, "$");
     // result = str.replace(/[A-g]/g, "$");
     // result = str.replace(/[^A-g]/g, "$");
-    result = str.replace(/[0-9a-z]/g, "$");
-document.write(result);
+//     result = str.replace(/[0-9a-z]/g, "$");
+// document.write(result);
 
 // var str = "I Love Elzero web school",
 //     result = str.replace(/L/gi, "@");
