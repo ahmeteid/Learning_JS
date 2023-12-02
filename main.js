@@ -833,9 +833,9 @@ for (variable In object) {
 // console.log(y);
 
 // 3- Math - Random
-var x = Math.random(),
-    myLimit = 10;
-console.log(Math.floor(Math.random() * myLimit))
+// var x = Math.random(),
+//     myLimit = 10;
+// console.log(Math.floor(Math.random() * myLimit))
 // console.log(Math.floor(x * myLimit) + 1);
 // var x = Math.random();
 // console.log(Math.floor(x * 10) + 1);
@@ -867,12 +867,12 @@ console.log(Math.floor(Math.random() * myLimit))
 // Letter {Number, Number} => word contain Number of Number
 // Letter {Number, } => word contain at least Number
 
-var str = "I love Elzeeero eeeee Weeb School",
+// var str = "I love Elzeeero eeeee Weeb School",
     // result = str.replace(/e+/gi, "@");
     // result = str.replace(/e{2}/gi, "@");
     // result = str.replace(/e{2,3}/gi, "@");
-    result = str.replace(/e{2,}/gi, "@");
-document.write(result);
+//     result = str.replace(/e{2,}/gi, "@");
+// document.write(result);
 
 
 // var str = "I 0 Love 1 Elzero 2 web 3 School hiz",
@@ -892,3 +892,17 @@ document.write(result);
 // var str = "I Love Elzero web school",
 //     result = str.replace(/L/gi, "@");
 // console.log(result);
+
+
+
+// Date Introduction
+// 1-new Date(); Print current Date & Time
+// 2- new Date(Millseconds); Print Millseconds from UTC 1 jen 1970 00:00:00
+// 3- new Date(Date string); can add Date string
+// 4- new Date(year, month, Day[hour, minutes, seconds, millseconds]);
+
+// var theDate = new Date();
+// var theDate = new Date(5000);
+// var theDate = new Date("Septemper 17, 2001 13:30:20");
+var theDate = new Date(2001,8,17,13,30,40,50);
+document.write(theDate);
