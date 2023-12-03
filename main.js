@@ -904,5 +904,17 @@ for (variable In object) {
 // var theDate = new Date();
 // var theDate = new Date(5000);
 // var theDate = new Date("Septemper 17, 2001 13:30:20");
-var theDate = new Date(2001,8,17,13,30,40,50);
+// var theDate = new Date(2001,8,17,13,30,40,50);
+// document.write(theDate);
+
+// Date Formatting
+// 1- Full Formate
+// 2- Long Formate
+// 3- Short Formate
+// 4- ISO Formate
+
+// var theDate = new Date("Sep 17 2001 14:30:50"); //Full Formate
+// var theDate = new Date("Sep 17 2001 14:30:50"); // Long Formate 
+// var theDate = new Date("10/24/2002"); // Short Formate 
+var theDate = new Date("2023-10-25 09:30:30+03:00"); // ISO Formate 
 document.write(theDate);
