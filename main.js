@@ -916,5 +916,28 @@ for (variable In object) {
 // var theDate = new Date("Sep 17 2001 14:30:50"); //Full Formate
 // var theDate = new Date("Sep 17 2001 14:30:50"); // Long Formate 
 // var theDate = new Date("10/24/2002"); // Short Formate 
-var theDate = new Date("2023-10-25 09:30:30+03:00"); // ISO Formate 
-document.write(theDate);
+// var theDate = new Date("2023-10-25 09:30:30+03:00"); // ISO Formate 
+// document.write(theDate);
+
+// Date - Methods
+// 1- getDate(); Day of the month 0-31
+// 2- getDay(); Day of the week 0-6
+// 3- getFullYear(); Get the full year
+// 4- getHours(); Get hourse 0-59
+// 5- getMinutes(); Get minutes 0-59
+// 6- getSeconds(); Get seconds 0-59
+// 7- getMilliseconds(); Get milliseconds 0-999
+// 8= getTime(); Number of milliseconds from 1970 or specific date
+// 9- getTimeZoneOffset(); Get def between ITC & your locltime
+
+var theDate = new Date();
+// var dt = theDate.getDate();
+// var dt = theDate.getDay();
+// var dt = theDate.getFullYear();
+// var dt = theDate.getHours();
+// var dt = theDate.getMinutes();
+// var dt = theDate.getSeconds();
+// var dt = theDate.getMilliseconds();
+// var dt = theDate.getTime();
+var dt = theDate.getTimezoneOffset();
+document.write(dt);
