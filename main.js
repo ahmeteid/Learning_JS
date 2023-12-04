@@ -919,7 +919,7 @@ for (variable In object) {
 // var theDate = new Date("2023-10-25 09:30:30+03:00"); // ISO Formate 
 // document.write(theDate);
 
-// Date - Methods
+// Date - Methods Get
 // 1- getDate(); Day of the month 0-31
 // 2- getDay(); Day of the week 0-6
 // 3- getFullYear(); Get the full year
@@ -930,7 +930,7 @@ for (variable In object) {
 // 8= getTime(); Number of milliseconds from 1970 or specific date
 // 9- getTimeZoneOffset(); Get def between ITC & your locltime
 
-var theDate = new Date();
+// var theDate = new Date();
 // var dt = theDate.getDate();
 // var dt = theDate.getDay();
 // var dt = theDate.getFullYear();
@@ -939,5 +939,24 @@ var theDate = new Date();
 // var dt = theDate.getSeconds();
 // var dt = theDate.getMilliseconds();
 // var dt = theDate.getTime();
-var dt = theDate.getTimezoneOffset();
-document.write(dt);
+// var dt = theDate.getTimezoneOffset();
+// document.write(dt);
+
+
+// Date - Methods Set
+// 1- setDate(day[req])
+// 2- setFullYear(year[req], month[opt], day[opt])
+// 3- setMonth(month[req], day[opt])
+// 4- setHours(hours[req], minutes[opt], seconds[opt], milliseconds[opt])
+// 5- setMinutes(minutes[req], seconds[opt], milliseconds[opt])
+// 6- setMilliseconds(800000)
+
+var theDate = new Date();
+// theDate.setDate(6);
+// theDate.setFullYear(2001);
+// theDate.setFullYear(2001, 8, 17);
+// theDate.setMonth(8);
+// theDate.setHours(9);
+// theDate.setMinutes(30);
+theDate.setMilliseconds(600000);
+document.write(theDate);
