@@ -951,12 +951,43 @@ for (variable In object) {
 // 5- setMinutes(minutes[req], seconds[opt], milliseconds[opt])
 // 6- setMilliseconds(800000)
 
+// var theDate = new Date();
+// // theDate.setDate(6);
+// // theDate.setFullYear(2001);
+// // theDate.setFullYear(2001, 8, 17);
+// // theDate.setMonth(8);
+// // theDate.setHours(9);
+// // theDate.setMinutes(30);
+// theDate.setMilliseconds(600000);
+// document.write(theDate);
+
+
+// Date Methods - Now
+// 1- now()
+// 2- parse()
+// 3- toIsoString()
+// 4- toDateStriing()
+// 5- toTimeStriing()
+
 var theDate = new Date();
-// theDate.setDate(6);
-// theDate.setFullYear(2001);
-// theDate.setFullYear(2001, 8, 17);
-// theDate.setMonth(8);
-// theDate.setHours(9);
-// theDate.setMinutes(30);
-theDate.setMilliseconds(600000);
-document.write(theDate);
+
+// dt = theDate.toISOString();
+// dt = theDate.toDateString();
+dt = theDate.toTimeString();
+document.write(dt);
+// dateNow = Date.now();
+
+// min = 1000 * 60,
+// hour = min * 60,
+// day = hour * 24,
+// week = day * 7,
+// month = week * 4,
+// year = month * 12;
+
+
+// document.write(Math.round(dateNow / min) + ", ");
+// document.write(Math.round(dateNow / hour) + ", ");
+// document.write(Math.round(dateNow / day) + ", ");
+// document.write(Math.round(dateNow / week) + ", ");
+// document.write(Math.round(dateNow / month) + ", ");
+// document.write(Math.round(dateNow / year) + ", ");
