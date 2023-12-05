@@ -969,12 +969,12 @@ for (variable In object) {
 // 4- toDateStriing()
 // 5- toTimeStriing()
 
-var theDate = new Date();
+// var theDate = new Date();
 
 // dt = theDate.toISOString();
 // dt = theDate.toDateString();
-dt = theDate.toTimeString();
-document.write(dt);
+// dt = theDate.toTimeString();
+// document.write(dt);
 // dateNow = Date.now();
 
 // min = 1000 * 60,
@@ -991,3 +991,13 @@ document.write(dt);
 // document.write(Math.round(dateNow / week) + ", ");
 // document.write(Math.round(dateNow / month) + ", ");
 // document.write(Math.round(dateNow / year) + ", ");
+
+
+// Numbers Methods
+// 1- (10).toExponential()
+// 2- (99.65).toFixed(0) , (99.65).toFixed(1)
+// 3- parseInt("50years")
+
+var old = parseInt("93years") / 2;
+document.write(old);
+// document.write(Math.round(old));
